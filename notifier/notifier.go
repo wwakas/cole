@@ -85,7 +85,7 @@ func (n *NotificationSet) slack() {
 	// DEBUG
 	log.Println("slack method")
 	payload := slack.Payload{
-		Text:      "Missed DeadManSwitch Alert  - " + n.Message.CommonAnnotations["message"],
+		Text:      n.Config.SlackIcon + " Missed DeadManSwitch Alert on: " + n.Config.ClusterLabel + " - the whole monitoring pipeline may not be functioning properly.",
 		Username:  n.Config.SlackUsername,
 		Channel:   n.Config.SlackChannel,
 		IconEmoji: n.Config.SlackIcon,
