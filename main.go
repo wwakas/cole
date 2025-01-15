@@ -11,12 +11,12 @@ import (
 	"time"
 
 	"github.com/caarlos0/env"
-	"github.com/jpweber/cole/configuration"
-	"github.com/jpweber/cole/notifier"
 	"github.com/prometheus/client_golang/prometheus/promhttp"
 	log "github.com/sirupsen/logrus"
+	"github.com/wwakas/cole/configuration"
+	"github.com/wwakas/cole/notifier"
 
-	"github.com/jpweber/cole/dmtimer"
+	"github.com/wwakas/cole/dmtimer"
 )
 
 const (
