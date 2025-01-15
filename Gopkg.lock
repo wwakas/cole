@@ -140,6 +140,19 @@
 
 [[projects]]
   branch = "master"
+  digest = "1:47a93716d830cd1c2aabb0dff7ec90fc2c69c418c8feaab717b6a6bea6e33aa3"
+  name = "github.com/wwakas/cole"
+  packages = [
+    "configuration",
+    "dmtimer",
+    "notifier",
+    "slack",
+  ]
+  pruneopts = "UT"
+  revision = "03c6375aaa3d15bcb5fad96716aca4f640bef66c"
+
+[[projects]]
+  branch = "master"
   digest = "1:38f553aff0273ad6f367cb0a0f8b6eecbaef8dc6cb8b50e57b6a81c1d5b1e332"
   name = "golang.org/x/crypto"
   packages = ["ssh/terminal"]
@@ -169,6 +182,10 @@
     "github.com/prometheus/client_golang/prometheus/promhttp",
     "github.com/rs/xid",
     "github.com/sirupsen/logrus",
+    "github.com/wwakas/cole/configuration",
+    "github.com/wwakas/cole/dmtimer",
+    "github.com/wwakas/cole/notifier",
+    "github.com/wwakas/cole/slack",
   ]
   solver-name = "gps-cdcl"
   solver-version = 1
