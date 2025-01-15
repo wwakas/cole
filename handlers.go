@@ -5,11 +5,11 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/jpweber/cole/dmtimer"
 	"github.com/prometheus/alertmanager/template"
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/rs/xid"
 	log "github.com/sirupsen/logrus"
+	"github.com/wwakas/cole/dmtimer"
 )
 
 // wrapper function for http logging

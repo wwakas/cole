@@ -8,10 +8,10 @@ import (
 	"time"
 
 	"github.com/PagerDuty/go-pagerduty"
-	"github.com/jpweber/cole/configuration"
-	"github.com/jpweber/cole/dmtimer"
-	"github.com/jpweber/cole/slack"
 	"github.com/prometheus/alertmanager/template"
+	"github.com/wwakas/cole/configuration"
+	"github.com/wwakas/cole/dmtimer"
+	"github.com/wwakas/cole/slack"
 
 	log "github.com/sirupsen/logrus"
 )
