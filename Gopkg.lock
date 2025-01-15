@@ -139,6 +139,19 @@
   version = "v1.2.0"
 
 [[projects]]
+  branch = "develop"
+  digest = "1:f7418b218d3a207b0dae0c149baa50251653c250490ac642ca671de3cfd79cf4"
+  name = "github.com/wwakas/cole"
+  packages = [
+    "configuration",
+    "dmtimer",
+    "notifier",
+    "slack",
+  ]
+  pruneopts = "UT"
+  revision = "810dd60f21d3c4787ff5e045bec90bf384eefa4d"
+
+[[projects]]
   branch = "master"
   digest = "1:38f553aff0273ad6f367cb0a0f8b6eecbaef8dc6cb8b50e57b6a81c1d5b1e332"
   name = "golang.org/x/crypto"
@@ -169,6 +182,10 @@
     "github.com/prometheus/client_golang/prometheus/promhttp",
     "github.com/rs/xid",
     "github.com/sirupsen/logrus",
+    "github.com/wwakas/cole/configuration",
+    "github.com/wwakas/cole/dmtimer",
+    "github.com/wwakas/cole/notifier",
+    "github.com/wwakas/cole/slack",
   ]
   solver-name = "gps-cdcl"
   solver-version = 1
