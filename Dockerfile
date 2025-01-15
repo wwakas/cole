@@ -1,7 +1,7 @@
 FROM golang:1.11.3-alpine3.8 AS build
-COPY . /go/src/github.com/jpweber/cole
+COPY . /go/src/github.com/wwakas/cole
 
-WORKDIR /go/src/github.com/jpweber/cole
+WORKDIR /go/src/github.com/wwakas/cole
 RUN apk --update upgrade && \
     apk add ca-certificates && \
     update-ca-certificates && \
@@ -15,5 +15,5 @@ RUN apk --update upgrade && \
     apk add ca-certificates && \
     update-ca-certificates && \
     rm -rf /var/cache/apk/*
-COPY --from=build /go/src/github.com/jpweber/cole/app /cole
+COPY --from=build /go/src/github.com/wwakas/cole/app /cole
 CMD ["/cole"]
