@@ -89,6 +89,7 @@ PDIntegrationKey = "5353fb993888441811111111111"
 * `SLACK_CHANNEL`
 * `SLACK_USERNAME`
 * `SLACK_ICON`
+* `LABEL`
 
 ## Example Prometheus Alert Manager config
 
